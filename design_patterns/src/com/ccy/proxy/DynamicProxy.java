@@ -17,7 +17,7 @@ public class DynamicProxy implements InvocationHandler {
         System.out.println("代理前...");
         Object invoke = method.invoke(object, objects);
         System.out.println("代理后...");
-        return null;
+        return invoke;
 
     }
 
